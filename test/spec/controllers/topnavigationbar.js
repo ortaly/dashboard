@@ -5,7 +5,7 @@ describe('Controller: TopnavigationbarCtrl', function () {
   // load the controller's module
   beforeEach(module('angularDashboardApp'));
 
-  var TopnavigationbarcontrollerCtrl,
+  var TopnavigationbarCtrl,
     scope;
 
   // Initialize the controller and a mock scope
@@ -16,7 +16,7 @@ describe('Controller: TopnavigationbarCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should check messages exists', function () {
+    expect(scope.messages.length).toBeGreaterThan(0);
   });
 });
