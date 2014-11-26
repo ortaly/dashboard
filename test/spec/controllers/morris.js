@@ -1,22 +1,22 @@
 'use strict';
 
-describe('Controller: TopnavigationbarCtrl', function () {
+describe('Controller: MorrisCtrl', function () {
 
   // load the controller's module
   beforeEach(module('angularDashboardApp'));
 
-  var TopnavigationbarCtrl,
+  var MorrisCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    TopnavigationbarCtrl = $controller('TopnavigationbarCtrl', {
+    MorrisCtrl = $controller('MorrisCtrl', {
       $scope: scope
     });
   }));
 
-  it('should check messages exists', function () {
-    expect(scope.messages.length).toBeGreaterThan(0);
+  it('should attach a list of awesomeThings to the scope', function () {
+    expect(scope.awesomeThings.length).toBe(3);
   });
 });

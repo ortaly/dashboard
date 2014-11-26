@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
+    <!-- Morris Charts CSS -->
+    <link href="bower_components/morris.js/morris.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   </head>
@@ -26,7 +29,7 @@
     <!-- Add your site or application content here -->
     <div >
       <!-- Navigation -->
-        <nav ng-controller="TopnavigationbarCtrl" class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <nav ng-controller="TopnavCtrl" class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -157,19 +160,19 @@
                         <li>
                             <a class="active" href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
-                        <!--<li>
+                        <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="/#/flot">Flot Charts</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a href="/#/morris">Morris.js Charts</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
-                        <!--</li>
-                        <li>
+                        </li>
+                        <!--<li>
                             <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
                         <li>
@@ -281,8 +284,20 @@
     <!-- endbower -->
 
     <!-- Morris Charts JavaScript -->
-    <script src="bower_components/raphael/raphael-min.js"></script>
     <script src="bower_components/morris.js/morris.min.js"></script>
+    <script src="bower_components/raphael/raphael-min.js"></script>
+    
+
+    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+
+    <!-- Flot Charts JavaScript -->
+    <script src="bower_components/flot/excanvas.min.js"></script>
+    <script src="bower_components/flot/jquery.flot.js"></script>
+    <script src="bower_components/flot/jquery.flot.pie.js"></script>
+    <script src="bower_components/flot/jquery.flot.resize.js"></script>
+    <script src="bower_components/flot/jquery.flot.time.js"></script>
+    <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
 
     <!-- endbuild -->
 
@@ -290,7 +305,9 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/topnavigationbar.js"></script>
+        <script src="scripts/controllers/navbar.js"></script>
+        <script src="scripts/controllers/flot.js"></script>
+        <script src="scripts/controllers/morris.js"></script>
         <!-- endbuild -->
 </body>
 </html>
